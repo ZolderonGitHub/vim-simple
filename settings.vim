@@ -18,11 +18,12 @@ set hidden
 set splitbelow splitright
 set nocompatible
 set termguicolors
-"set complete
-set completeopt=menuone,longest
-set shortmess+=c
 set makeprg=build.bat
 set noshowmode
+set shortmess+=c
+
+" Native completion
+set completeopt=menuone,longest
 
 " Highlight TODO, FIXME, NOTE, STUDY, IMPORTANT etc.
 if has('autocmd')

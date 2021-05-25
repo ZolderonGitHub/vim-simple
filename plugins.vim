@@ -17,5 +17,4 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'arcticicestudio/nord-vim'
 Plug 'wojciechkepka/vim-github-dark'
 Plug 'ajmwagar/vim-deus'
-
 call plug#end()

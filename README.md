@@ -24,6 +24,6 @@ fzf might be bloat for you) or add some good stuff and maybe make a fork.
 
 Leader key is space.
 
-Space + e = open file browser
-Space + b = compile
-Space + (h, j, k, l) = move to a different buffer when the window is splited.
+- Space + e = open file browser
+- Space + b = compile;
+- Space + (h, j, k, l) = move to a different buffer when the window is splited

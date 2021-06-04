@@ -18,7 +18,11 @@ set hidden
 set splitbelow splitright
 set nocompatible
 set termguicolors
-set makeprg=build.bat
+if has('win32')
+    set makeprg=build.bat
+else
+    set makeprg=build.sh
+endif
 set noshowmode
 set shortmess+=c
 
@@ -36,10 +40,3 @@ if has('autocmd')
     augroup END
 endif
 
-" Compile
-function! s:build()
-    let &makeprg='build'
-    silent make
-    botright copen
-    wincmd p
-endfunction

@@ -1,9 +1,24 @@
+" Compile
+function! s:build()
+    let &makeprg='build'
+    silent make
+    botright copen
+    wincmd p
+endfunction
+
+function! s:launch()
+    let &makeprg='launch'
+    silent make
+endfunction
+
 let mapleader = " "
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>c :make :copen <CR>
 
 command! Build call s:build()
+command! Launch call s:launch()
 nnoremap <leader>b :Build<CR>
+nnoremap <leader>m :Launch <CR>
 
 map <leader>h :wincmd h<CR>
 map <leader>j :wincmd j<CR>

@@ -8,8 +8,6 @@ unit builds, lsp are a pain to use with compiled languages...).
 vim-simple isn't really a complete solution to these problems: it does only provide simple features
 like build-in vim autocompletion to have a decent base configuration to work with.
 
-For now it only supports windows, i will soon modify it for my linux laptop don't worry !
-
 You are free to copy this configuration, remove some of what you think is bloat(for example:
 fzf might be bloat for you) or add some good stuff and maybe make a fork.
 

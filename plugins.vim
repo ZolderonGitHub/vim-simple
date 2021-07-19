@@ -7,6 +7,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/AutoComplPop'
 Plug 'sheerun/vim-polyglot'
 
+" git
+Plug 'tpope/vim-fugitive'
+
 " File finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'

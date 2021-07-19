@@ -25,6 +25,7 @@ else
 endif
 set noshowmode
 set shortmess+=c
+set guicursor=i:block
 
 " Native completion
 set completeopt=menuone,longest

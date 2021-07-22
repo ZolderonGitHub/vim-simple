@@ -1,11 +1,17 @@
 call plug#begin(stdpath('data'))
 
+" Mains
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/AutoComplPop'
 Plug 'sheerun/vim-polyglot'
+
+" Concentration
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/vim-slash'
 
 " git
 Plug 'tpope/vim-fugitive'

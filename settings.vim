@@ -28,7 +28,7 @@ set shortmess+=c
 set guicursor=i:block
 
 " Native completion
-set completeopt=menuone,longest
+set completeopt=menuone,noinsert,noselect,longest
 
 " Highlight TODO, FIXME, NOTE, STUDY, IMPORTANT etc.
 if has('autocmd')

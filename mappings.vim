@@ -42,3 +42,4 @@ inoremap <expr> <Tab> pumvisible() ? "<C-y>" : "<Tab>"
 inoremap <expr> <CR> pumvisible() ? "<C-y>" : "<CR>"
 inoremap <expr> <Down> pumvisible() ? "<C-n>" : "<Down>"
 inoremap <expr> <Up> pumvisible() ? "<C-p>" : "<Up>"
+

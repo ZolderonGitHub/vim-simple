@@ -8,14 +8,12 @@ unit builds, lsp are a pain to use with compiled languages...).
 vim-simple isn't really a complete solution to these problems: it does only provide simple features
 like build-in vim autocompletion to have a decent base configuration to work with.
 
-coc.nvim is still provided however to provide better completion and linting for interpreted languages.
-
 You are free to copy this configuration, remove some of what you think is bloat(for example:
 fzf might be bloat for you) or add some good stuff and maybe make a fork.
 
 ## Features:
 
-- AutoCompletion(compiled: vim native completion, interpreted: coc.nvim)
+- AutoCompletion
 - Fuzzy file finding
 - File browser
 - Compilation(default build file: build.bat)

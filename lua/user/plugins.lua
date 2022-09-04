@@ -49,10 +49,27 @@ return packer.startup(function(use)
     use 'kyazdani42/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use "glepnir/dashboard-nvim" 
+    use "norcalli/nvim-colorizer.lua"
+
+    -- Icons
+    use "ryanoasis/vim-devicons"
 
     -- Themes
     use "ellisonleao/gruvbox.nvim"
-    use "shaunsingh/nord.nvim"
+    use "arcticicestudio/nord-vim"
+    use "ishan9299/nvim-solarized-lua"
+    use "catppuccin/nvim"
+    use "folke/tokyonight.nvim"
+    use "ful1e5/onedark.nvim"
+    use "EdenEast/nightfox.nvim"
+    use "bluz71/vim-moonfly-colors"
+    use "pineapplegiant/spaceduck"
+    use "rebelot/kanagawa.nvim"
+    use "sainnhe/sonokai"
+    use 'martinsione/darkplus.nvim'
+    use "yorickpeterse/happy_hacking.vim"
+    use "ayu-theme/ayu-vim"
+    use "tek256/simple-dark"
 
     -- Completion
     use "hrsh7th/nvim-cmp"

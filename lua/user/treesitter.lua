@@ -1,7 +1,7 @@
 require('nvim-treesitter.install').compilers = {"clang"}
 local configs = require("nvim-treesitter.configs")
 configs.setup {
-    ensure_installed = "maintained",
+    ensure_installed = "all",
     sync_install = false, 
     ignore_install = { "" }, -- List of parsers to ignore installing
     highlight = {
@@ -10,6 +10,6 @@ configs.setup {
         additional_vim_regex_highlighting = true,
 
     },
-    indent = { enable = true, disable = { "yaml" } },
+    indent = { enable = false, disable = { "yaml" } },
 }
 

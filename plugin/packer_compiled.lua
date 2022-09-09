@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
   ["cmp-path"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
@@ -144,11 +149,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
-  ["nord-vim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nord-vim",
-    url = "https://github.com/arcticicestudio/nord-vim"
-  },
   nvim = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim",
@@ -168,6 +168,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-solarized-lua"] = {
     loaded = true,
@@ -238,11 +248,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-devicons"] = {
     loaded = true,

@@ -56,10 +56,8 @@ return packer.startup(function(use)
 
     -- Themes
     use "ellisonleao/gruvbox.nvim"
-    use "arcticicestudio/nord-vim"
     use "ishan9299/nvim-solarized-lua"
     use "catppuccin/nvim"
-    use "folke/tokyonight.nvim"
     use "ful1e5/onedark.nvim"
     use "EdenEast/nightfox.nvim"
     use "bluz71/vim-moonfly-colors"
@@ -72,6 +70,9 @@ return packer.startup(function(use)
     use "tek256/simple-dark"
 
     -- Completion
+    use "williamboman/nvim-lsp-installer"
+    use "neovim/nvim-lspconfig" 
+    use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer"
     use "hrsh7th/cmp-path"

@@ -110,7 +110,7 @@ cmp.setup {
     end,
   },
   sources = {
-    { name = "nvim-lsp"},
+    { name = "nvim_lsp"},
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
@@ -123,5 +123,8 @@ cmp.setup {
     ghost_text = false,
     native_menu = false,
   },
+  window = {
+      documentation = cmp.config.window.bordered()
+  }
 }
 

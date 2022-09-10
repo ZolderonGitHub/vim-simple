@@ -45,33 +45,27 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
     use "windwp/nvim-autopairs"
-    use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
-    use "glepnir/dashboard-nvim" 
+    use "glepnir/dashboard-nvim"
     use "norcalli/nvim-colorizer.lua"
 
     -- Icons
-    use "ryanoasis/vim-devicons"
+    use "kyazdani42/nvim-web-devicons"
 
     -- Themes
     use "ellisonleao/gruvbox.nvim"
-    use "ishan9299/nvim-solarized-lua"
-    use "catppuccin/nvim"
-    use "ful1e5/onedark.nvim"
     use "EdenEast/nightfox.nvim"
-    use "bluz71/vim-moonfly-colors"
-    use "pineapplegiant/spaceduck"
-    use "rebelot/kanagawa.nvim"
     use "sainnhe/sonokai"
     use 'martinsione/darkplus.nvim'
-    use "yorickpeterse/happy_hacking.vim"
-    use "ayu-theme/ayu-vim"
-    use "tek256/simple-dark"
+    use "sam4llis/nvim-tundra"
+    use "glepnir/zephyr-nvim"
+    use "ange-yaghi/onedark.vim"
+    use "kdheepak/monochrome.nvim"
 
     -- Completion
     use "williamboman/nvim-lsp-installer"
-    use "neovim/nvim-lspconfig" 
+    use "neovim/nvim-lspconfig"
     use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer"

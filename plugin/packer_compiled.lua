@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["ayu-vim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ayu-vim",
-    url = "https://github.com/ayu-theme/ayu-vim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -129,30 +124,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
-  ["happy_hacking.vim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\happy_hacking.vim",
-    url = "https://github.com/yorickpeterse/happy_hacking.vim"
-  },
-  ["kanagawa.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\kanagawa.nvim",
-    url = "https://github.com/rebelot/kanagawa.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["monochrome.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\monochrome.nvim",
+    url = "https://github.com/kdheepak/monochrome.nvim"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
-  },
-  nvim = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim",
-    url = "https://github.com/catppuccin/nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -179,11 +164,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-solarized-lua"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-solarized-lua",
-    url = "https://github.com/ishan9299/nvim-solarized-lua"
-  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
@@ -194,15 +174,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-tundra"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tundra",
+    url = "https://github.com/sam4llis/nvim-tundra"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
+  ["onedark.vim"] = {
     loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark.nvim",
-    url = "https://github.com/ful1e5/onedark.nvim"
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark.vim",
+    url = "https://github.com/ange-yaghi/onedark.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -224,20 +209,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["simple-dark"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\simple-dark",
-    url = "https://github.com/tek256/simple-dark"
-  },
   sonokai = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\sonokai",
     url = "https://github.com/sainnhe/sonokai"
-  },
-  spaceduck = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\spaceduck",
-    url = "https://github.com/pineapplegiant/spaceduck"
   },
   ["telescope-media-files.nvim"] = {
     loaded = true,
@@ -249,15 +224,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-devicons"] = {
+  ["zephyr-nvim"] = {
     loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-devicons",
-    url = "https://github.com/ryanoasis/vim-devicons"
-  },
-  ["vim-moonfly-colors"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-moonfly-colors",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\zephyr-nvim",
+    url = "https://github.com/glepnir/zephyr-nvim"
   }
 }
 

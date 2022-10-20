@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  catppuccin = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -114,10 +119,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
   },
+  ["doom-one.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\doom-one.nvim",
+    url = "https://github.com/NTBBloodbath/doom-one.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["gruvbox-baby"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox-baby",
+    url = "https://github.com/luisiacc/gruvbox-baby"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
@@ -128,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  melange = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\melange",
+    url = "https://github.com/savq/melange"
   },
   ["monochrome.nvim"] = {
     loaded = true,
@@ -209,6 +229,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rose-pine",
+    url = "https://github.com/rose-pine/neovim"
+  },
   sonokai = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\sonokai",
@@ -223,11 +248,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["zephyr-nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\zephyr-nvim",
-    url = "https://github.com/glepnir/zephyr-nvim"
   }
 }
 

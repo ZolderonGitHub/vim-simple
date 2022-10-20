@@ -36,7 +36,7 @@ local lsp_defaults = {
     flags = {
         debounce_text_changes = 150,
     },
-    capabilities = require("cmp_nvim_lsp").update_capabilities(
+    capabilities = require("cmp_nvim_lsp").default_capabilities(
         vim.lsp.protocol.make_client_capabilities()
     ),
     on_attach = on_attach,
@@ -45,7 +45,7 @@ local lsp_defaults = {
 local lspconfig = require('lspconfig')
 local lspinstaller = require("nvim-lsp-installer")
 
-local servers = { "sumneko_lua", "pyright" }
+local servers = { "sumneko_lua", "pyright", "ocamllsp" }
 
 lspinstaller.setup({})
 

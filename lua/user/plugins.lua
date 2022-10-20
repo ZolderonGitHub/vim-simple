@@ -59,9 +59,16 @@ return packer.startup(function(use)
     use "sainnhe/sonokai"
     use 'martinsione/darkplus.nvim'
     use "sam4llis/nvim-tundra"
-    use "glepnir/zephyr-nvim"
     use "ange-yaghi/onedark.vim"
     use "kdheepak/monochrome.nvim"
+    use "savq/melange"
+    use "NTBBloodbath/doom-one.nvim"
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use "luisiacc/gruvbox-baby"
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+    })
 
     -- Completion
     use "williamboman/nvim-lsp-installer"
@@ -84,7 +91,6 @@ return packer.startup(function(use)
     -- Treesitter
     use {
         "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
     }
     use "nvim-treesitter/playground"
 

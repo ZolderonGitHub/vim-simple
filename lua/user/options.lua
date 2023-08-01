@@ -25,10 +25,10 @@ local options = {
     tabstop = 4,                             -- insert 2 spaces for a tab
     softtabstop = 4,
     cursorline = true,                       -- highlight the current line
-    number = true,                           -- set numbered lines
+    number = no,                           -- set numbered lines
     relativenumber = false,                  -- set relative numbered lines
     numberwidth = 4,                         -- set number column width to 2 {default 4}
-    signcolumn = "number",                      -- always show the sign column, otherwise it would shift the text each time
+    signcolumn = "no",                      -- always show the sign column, otherwise it would shift the text each time
     wrap = false,                            -- display lines as one long line
     scrolloff = 8,                           -- is one of my fav
     sidescrolloff = 8,
@@ -38,6 +38,7 @@ local options = {
     belloff = "all",
     errorbells = false,
     hidden = true,
+    background = "dark"
 }
 
 vim.opt.shortmess:append "c"
@@ -55,4 +56,9 @@ end
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+
+if vim.g.neovide then
+    vim.o.guifont = "Iosevka:h14"
+    vim.g.neovide_refresh_rate = 144
+end
 

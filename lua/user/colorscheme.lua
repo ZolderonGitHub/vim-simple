@@ -2,15 +2,17 @@ local colorscheme = "catppuccin"
 
 local g = vim.g
 
-g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
+g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 require("catppuccin").setup({
-    transparent_background = true,
+    transparent_background = false,
 	term_colors = true,
 	dim_inactive = {
 		enabled = false,
 		shade = "dark",
 		percentage = 0.15,
 	},
+    no_italic = true,
+    no_bold = true,
 	styles = {
 		comments = {},
 		conditionals = {},
@@ -26,6 +28,10 @@ require("catppuccin").setup({
 		operators = {},
 	},
 	integrations = {
+        indent_blankline = {
+            enabled = true,
+            colored_indent_levels = false
+        },
 		treesitter = true,
 		cmp = true,
 		gitsigns = true,
@@ -52,24 +58,20 @@ require("catppuccin").setup({
 	highlight_overrides = {},
 })
 
--- GRUVBOX
-require('gruvbox').setup({
-    bold = false,
-    italic = false,
+-- KANAGAWA
+require('kanagawa').setup({
+    compile = false,             -- enable compiling the colorscheme
+    undercurl = true,            -- enable undercurls
+    commentStyle = { italic = false },
+    functionStyle = {},
+    keywordStyle = { italic = false},
+    statementStyle = { bold = false },
+    typeStyle = {},
+    transparent = false,         -- do not set background color
+    dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
+    terminalColors = true,       -- define vim.g.terminal_color_{0,17}
+    theme = "dragon",              -- Load "wave" theme when 'background' option is not set
 })
-
-g.gruvbox_baby_background_color = "dark"
-g.gruvbox_baby_transparent_mode = false
-g.gruvbox_baby_comment_style = "NONE"
-g.gruvbox_baby_keyword_style = "NONE"
-g.gruvbox_baby_function_style = "NONE"
-g.gruvbox_baby_string_style = "NONE"
-
---g.gruvbox_bold = false
---g.gruvbox_italic = false
---g.gruvbox_invert_selection = false
---g.gruvbox_italicize_comments = false
---g.gruvbox_contrast_dark = 'medium'
 
 -- NORD
 g.nord_italic = false;
@@ -80,14 +82,10 @@ g.sonokai_style = 'shusia'
 g.sonokai_enable_italic = 0
 g.sonokai_disable_italic_comment = 1
 
--- DOOM ONE
-g.doom_one_terminal_colors = true
-g.doom_one_italic_comments = false
-g.doom_one_enable_treesitter = true
-
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-if not status_ok then
-  vim.notify("colorscheme " .. colorscheme .. " not found!")
-  return
+function color_buffer(color)
+    color = color or colorscheme
+    vim.cmd.colorscheme(color)
 end
+
+color_buffer()
 

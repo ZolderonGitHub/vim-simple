@@ -109,35 +109,25 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["darkplus.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\darkplus.nvim",
-    url = "https://github.com/martinsione/darkplus.nvim"
-  },
-  ["dashboard-nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
-    url = "https://github.com/glepnir/dashboard-nvim"
-  },
-  ["doom-one.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\doom-one.nvim",
-    url = "https://github.com/NTBBloodbath/doom-one.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["gruvbox-baby"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox-baby",
-    url = "https://github.com/luisiacc/gruvbox-baby"
-  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["horizon.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\horizon.nvim",
+    url = "https://github.com/akinsho/horizon.nvim"
+  },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -153,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\monochrome.nvim",
     url = "https://github.com/kdheepak/monochrome.nvim"
-  },
-  ["nightfox.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
-    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -194,30 +179,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-tundra"] = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tundra",
-    url = "https://github.com/sam4llis/nvim-tundra"
-  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["onedark.vim"] = {
+  ["odin.vim"] = {
     loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark.vim",
-    url = "https://github.com/ange-yaghi/onedark.vim"
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\odin.vim",
+    url = "https://github.com/Tetralux/odin.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  playground = {
-    loaded = true,
-    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\playground",
-    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -248,6 +223,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-glsl"] = {
+    loaded = true,
+    path = "C:\\Users\\guimo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-glsl",
+    url = "https://github.com/tikhomirov/vim-glsl"
   }
 }
 

@@ -47,28 +47,28 @@ return packer.startup(function(use)
     use "windwp/nvim-autopairs"
     use 'kyazdani42/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
-    use "glepnir/dashboard-nvim"
     use "norcalli/nvim-colorizer.lua"
+    use "Tetralux/odin.vim"
+    use "tikhomirov/vim-glsl"
+
+    -- Treesitter
+    use({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}, as = "treesitter"})
 
     -- Icons
     use "kyazdani42/nvim-web-devicons"
 
     -- Themes
     use "ellisonleao/gruvbox.nvim"
-    use "EdenEast/nightfox.nvim"
     use "sainnhe/sonokai"
-    use 'martinsione/darkplus.nvim'
-    use "sam4llis/nvim-tundra"
-    use "ange-yaghi/onedark.vim"
     use "kdheepak/monochrome.nvim"
     use "savq/melange"
-    use "NTBBloodbath/doom-one.nvim"
     use { "catppuccin/nvim", as = "catppuccin" }
-    use "luisiacc/gruvbox-baby"
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
     })
+    use "rebelot/kanagawa.nvim"
+    use {"akinsho/horizon.nvim", tag = "*"}
 
     -- Completion
     use "williamboman/nvim-lsp-installer"
@@ -87,12 +87,6 @@ return packer.startup(function(use)
     -- Telescope
     use "nvim-telescope/telescope.nvim"
     use 'nvim-telescope/telescope-media-files.nvim'
-
-    -- Treesitter
-    use {
-        "nvim-treesitter/nvim-treesitter",
-    }
-    use "nvim-treesitter/playground"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

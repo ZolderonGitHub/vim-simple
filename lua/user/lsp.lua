@@ -45,7 +45,7 @@ local lsp_defaults = {
 local lspconfig = require('lspconfig')
 local lspinstaller = require("nvim-lsp-installer")
 
-local servers = { "sumneko_lua", "pyright", "ocamllsp" }
+local servers = { "lua_ls", "pyright", "ocamllsp", "tsserver" }
 
 lspinstaller.setup({})
 

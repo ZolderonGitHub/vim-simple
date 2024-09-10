@@ -45,14 +45,13 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
     use "windwp/nvim-autopairs"
-    use 'kyazdani42/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use "norcalli/nvim-colorizer.lua"
     use "Tetralux/odin.vim"
     use "tikhomirov/vim-glsl"
 
     -- Treesitter
-    use({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}, as = "treesitter"})
+    use({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})
 
     -- Icons
     use "kyazdani42/nvim-web-devicons"
@@ -60,15 +59,11 @@ return packer.startup(function(use)
     -- Themes
     use "ellisonleao/gruvbox.nvim"
     use "sainnhe/sonokai"
-    use "kdheepak/monochrome.nvim"
-    use "savq/melange"
     use { "catppuccin/nvim", as = "catppuccin" }
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
     })
-    use "rebelot/kanagawa.nvim"
-    use {"akinsho/horizon.nvim", tag = "*"}
 
     -- Completion
     use "williamboman/nvim-lsp-installer"

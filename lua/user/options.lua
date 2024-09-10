@@ -58,7 +58,6 @@ vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
 if vim.g.neovide then
-    vim.o.guifont = "Iosevka:h14"
-    vim.g.neovide_refresh_rate = 144
+    vim.o.guifont = "Iosevka:h12"
 end
 

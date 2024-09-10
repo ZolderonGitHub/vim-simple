@@ -29,7 +29,9 @@ keymap("n", "<leader>j", "<C-w>j", opts)
 keymap("n", "<leader>k", "<C-w>k", opts)
 keymap("n", "<leader>l", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":NvimTreeFindFileToggle<cr>", opts)
+vim.keymap.set("n", "<leader>s", ":vs<CR>")
+vim.keymap.set("n", "<leader>v", ":split<CR>")
+vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -69,10 +71,6 @@ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
-
 -- Compilation --
 function _G.build()
     if vim.fn.has('win32') then
@@ -96,6 +94,6 @@ function _G.launch()
     vim.cmd "silent make"
 end
 
-keymap("n", "<leader>b", ":lua build()<CR>", opts)
-keymap("n", "<leader>m", ":lua launch()<CR>", opts)
+keymap("n", "<leader>m", ":lua build()<CR>", opts)
+keymap("n", "<leader>b", ":lua launch()<CR>", opts)
 

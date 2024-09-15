@@ -31,7 +31,8 @@ keymap("n", "<leader>l", "<C-w>l", opts)
 
 vim.keymap.set("n", "<leader>s", ":vs<CR>")
 vim.keymap.set("n", "<leader>v", ":split<CR>")
-vim.keymap.set("n", "<leader>q", ":q<CR>")
+vim.keymap.set("n", "<leader>z", ":q<CR>")
+vim.keymap.set("n", "<leader>e", ":Lex 30<CR>")
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)

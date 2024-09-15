@@ -57,7 +57,3 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
-if vim.g.neovide then
-    vim.o.guifont = "Iosevka:h12"
-end
-

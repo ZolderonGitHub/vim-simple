@@ -45,17 +45,7 @@ local lsp_defaults = {
 local lspconfig = require('lspconfig')
 local lspinstaller = require("nvim-lsp-installer")
 
-local servers = { "lua_ls", "pyright", "ocamllsp", "tsserver" }
-
 lspinstaller.setup({})
-
-for _, lsp in ipairs(servers) do
-    lspconfig[lsp].setup{
-        flags = lsp_defaults.flags,
-        capabilities = lsp_defaults.capabilities,
-        on_attach = lsp_defaults.on_attach
-    }
-end
 
 lspconfig["clangd"].setup{
     flags = lsp_defaults.flags,

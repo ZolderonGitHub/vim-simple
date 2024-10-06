@@ -57,7 +57,7 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-web-devicons"
 
     -- Themes
-    use "ellisonleao/gruvbox.nvim"
+    use "gruvbox-community/gruvbox"
     use "sainnhe/sonokai"
     use { "catppuccin/nvim", as = "catppuccin" }
     use({
@@ -82,6 +82,9 @@ return packer.startup(function(use)
     -- Telescope
     use "nvim-telescope/telescope.nvim"
     use 'nvim-telescope/telescope-media-files.nvim'
+    
+    -- Tree
+    use "nvim-tree/nvim-tree.lua"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

@@ -1,4 +1,4 @@
-local colorscheme = "catppuccin"
+local colorscheme = "gruvbox"
 
 local g = vim.g
 
@@ -66,6 +66,11 @@ g.nord_bold = false;
 g.sonokai_style = 'shusia'
 g.sonokai_enable_italic = 0
 g.sonokai_disable_italic_comment = 1
+
+-- gruvbox
+g.gruvbox_contrast_dark = 'hard'
+g.gruvbox_vert_split = 'bg0'
+g.gruvbox_cursorline = 'bg1'
 
 function color_buffer(color)
     color = color or colorscheme

@@ -49,6 +49,8 @@ return packer.startup(function(use)
     use "norcalli/nvim-colorizer.lua"
     use "Tetralux/odin.vim"
     use "tikhomirov/vim-glsl"
+    use "mbbill/undotree"
+    use "tpope/vim-fugitive"
 
     -- Treesitter
     use({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})

@@ -68,7 +68,7 @@ return packer.startup(function(use)
     })
 
     -- Completion
-    use "williamboman/nvim-lsp-installer"
+    use "williamboman/mason.nvim"
     use "neovim/nvim-lspconfig"
     use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/nvim-cmp"

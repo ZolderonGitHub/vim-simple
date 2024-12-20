@@ -43,9 +43,9 @@ local lsp_defaults = {
 }
 
 local lspconfig = require('lspconfig')
-local lspinstaller = require("nvim-lsp-installer")
+local mason = require("mason")
 
-lspinstaller.setup({})
+mason.setup()
 
 lspconfig["clangd"].setup{
     flags = lsp_defaults.flags,

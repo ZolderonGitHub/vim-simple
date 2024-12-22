@@ -77,7 +77,7 @@ function _G.build()
     if vim.fn.has('win32') then
         vim.cmd "let &makeprg='build'"
     else
-        vim.cmd "let &makeprg='bash build.sh'"
+        vim.cmd "let &makeprg='bash ./build.sh'"
     end
     vim.cmd [[
     silent make

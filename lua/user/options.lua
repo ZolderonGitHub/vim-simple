@@ -47,12 +47,6 @@ for k, v in pairs(options) do
     vim.opt[k] = v
 end
 
-if vim.fn.has("win32") then
-    vim.cmd "set makeprg=build.bat"
-else
-    vim.cmd "set makeprg=build.sh"
-end
-
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work

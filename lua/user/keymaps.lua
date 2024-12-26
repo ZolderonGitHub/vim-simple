@@ -74,16 +74,17 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Compilation --
 function _G.build()
-    if vim.fn.has('win32') then
+    if vim.fn.has('win32') == 1 then
         vim.cmd "let &makeprg='build'"
+        vim.cmd "silent make"
+        vim.cmd "botright copen"
+        vim.cmd "wincmd p"
     else
         vim.cmd "let &makeprg='bash ./build.sh'"
+        vim.cmd "silent make"
+        vim.cmd "botright copen"
+        vim.cmd "wincmd p"
     end
-    vim.cmd [[
-    silent make
-    botright copen
-    wincmd p
-    ]]
 end
 
 function _G.launch()

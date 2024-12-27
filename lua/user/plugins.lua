@@ -84,9 +84,12 @@ return packer.startup(function(use)
     -- Telescope
     use "nvim-telescope/telescope.nvim"
     use 'nvim-telescope/telescope-media-files.nvim'
-    
+
     -- Tree
     use "nvim-tree/nvim-tree.lua"
+
+    -- Latex
+    use "https://github.com/jbyuki/nabla.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

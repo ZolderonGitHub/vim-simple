@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/zolder/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["nabla.nvim"] = {
+    loaded = true,
+    path = "/home/zolder/.local/share/nvim/site/pack/packer/start/nabla.nvim",
+    url = "https://github.com/jbyuki/nabla.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/zolder/.local/share/nvim/site/pack/packer/start/nvim-autopairs",

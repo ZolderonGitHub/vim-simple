@@ -53,7 +53,7 @@ return packer.startup(function(use)
     use "tpope/vim-fugitive"
 
     -- Treesitter
-    use({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
     -- Icons
     use "kyazdani42/nvim-web-devicons"

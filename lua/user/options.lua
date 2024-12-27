@@ -38,7 +38,7 @@ local options = {
     belloff = "all",
     errorbells = false,
     hidden = true,
-    background = "dark"
+    background = "dark",
 }
 
 vim.opt.shortmess:append "c"

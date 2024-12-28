@@ -78,7 +78,10 @@ return packer.startup(function(use)
     use "saadparwaiz1/cmp_luasnip"
 
     -- Snippets
-    use "L3MON4D3/LuaSnip"
+    use ({
+        "L3MON4D3/LuaSnip",
+        run = "make install_jsregexp"
+    })
     use "rafamadriz/friendly-snippets"
 
     -- Telescope
@@ -89,7 +92,20 @@ return packer.startup(function(use)
     use "nvim-tree/nvim-tree.lua"
 
     -- Latex
-    use "https://github.com/jbyuki/nabla.nvim"
+    use "jbyuki/nabla.nvim"
+
+    -- Which Key
+    use "folke/which-key.nvim"
+
+    -- Session
+    use {
+        'rmagatti/auto-session',
+        config = function()
+            require("auto-session").setup {
+                suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+            }
+        end
+    }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

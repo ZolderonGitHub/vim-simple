@@ -47,10 +47,15 @@ local mason = require("mason")
 
 mason.setup()
 
-lspconfig["clangd"].setup{
+lspconfig.clangd.setup{
     flags = lsp_defaults.flags,
     capabilities = lsp_defaults.capabilities,
     on_attach = lsp_defaults.on_attach,
     handlers = {["textDocument/publishDiagnostics"] = function() end }
 }
+
+lspconfig.lua_ls.setup{}
+lspconfig.pylsp.setup{}
+lspconfig.ols.setup{}
+lspconfig.zls.setup{}
 

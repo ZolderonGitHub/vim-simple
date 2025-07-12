@@ -97,6 +97,9 @@ return packer.startup(function(use)
     -- Which Key
     use "folke/which-key.nvim"
 
+    -- Comments
+    use "tpope/vim-commentary"
+
     -- Session
     use {
         'rmagatti/auto-session',

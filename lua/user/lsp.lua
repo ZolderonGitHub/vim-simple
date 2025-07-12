@@ -47,15 +47,19 @@ local mason = require("mason")
 
 mason.setup()
 
-lspconfig.clangd.setup{
-    flags = lsp_defaults.flags,
-    capabilities = lsp_defaults.capabilities,
-    on_attach = lsp_defaults.on_attach,
-    handlers = {["textDocument/publishDiagnostics"] = function() end }
-}
+-- lspconfig.clangd.setup{
+--     flags = lsp_defaults.flags,
+--     capabilities = lsp_defaults.capabilities,
+--     on_attach = lsp_defaults.on_attach,
+--     handlers = {["textDocument/publishDiagnostics"] = function(...) end }
+-- }
 
+lspconfig.clangd.setup{}
 lspconfig.lua_ls.setup{}
 lspconfig.pylsp.setup{}
 lspconfig.ols.setup{}
 lspconfig.zls.setup{}
+
+-- By default the diagnostics are disabled, a keymap can be used to reactivate them on the fly
+vim.diagnostic.disable()
 

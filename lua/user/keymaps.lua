@@ -96,6 +96,20 @@ function _G.launch()
     vim.cmd "silent make"
 end
 
+-- toggle diagnostics function
+
+function _G.toggle_diagnostics()
+    if vim.g.diagnostics_active then
+        vim.g.diagnostics_active = false
+        vim.diagnostic.disable()
+    else
+        vim.g.diagnostics_active = true
+        vim.diagnostic.enable()
+    end
+end
+
 keymap("n", "<leader>m", ":lua build()<CR>", opts)
 keymap("n", "<leader>b", ":lua launch()<CR>", opts)
+
+keymap("n", "<leader>xd", ":lua toggle_diagnostics()<CR>", opts)
 

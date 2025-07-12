@@ -1,9 +1,9 @@
 ## Features:
 
-- AutoCompletion(lsp and buffer completion)
+- AutoCompletion(lsp and buffer completion, snippets)
 - Fuzzy file finding
 - File browser
-- Compilation(default build file: build.bat)
+- Compilation(default build file: build.bat, build.sh)
 - Airline
 - Some good colorschemes
 

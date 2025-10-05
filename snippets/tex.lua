@@ -9,18 +9,18 @@ local fmt = require("luasnip.extras.fmt").fmt
 local fmta = require("luasnip.extras.fmt").fmta
 local rep = require("luasnip.extras").rep
 return {
-    s({trig="im", snippetType="autosnippet"},
+    s({trig="im ", snippetType="autosnippet"},
     {
         t("\\( "),
         i(1),
-        t("\\)"),
+        t(" \\)"),
     }),
 
-    s({trig="dm", snippetType="autosnippet"},
+    s({trig="dm ", snippetType="autosnippet"},
     {
         t("\\[ "),
         i(1),
-        t("\\]"),
+        t(" \\]"),
     }),
 
     s({trig="th"},
@@ -59,6 +59,26 @@ return {
         \begin{proof}
             <>
         \end{proof}
+        ]],
+        { i(1) }
+    )),
+
+    s({trig="begin"},
+    fmta(
+        [[
+        \begin{<>}
+            <>
+        \end{<>}
+        ]],
+        { i(1), i(2), rep(1) }
+    )),
+
+    s({trig="enum"},
+    fmta(
+        [[
+        \begin{enumerate}
+            <>
+        \end{enumerate}
         ]],
         { i(1) }
     )),

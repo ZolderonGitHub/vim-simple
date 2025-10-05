@@ -29,10 +29,10 @@ keymap("n", "<leader>j", "<C-w>j", opts)
 keymap("n", "<leader>k", "<C-w>k", opts)
 keymap("n", "<leader>l", "<C-w>l", opts)
 
-vim.keymap.set("n", "<leader>s", ":vs<CR>")
-vim.keymap.set("n", "<leader>v", ":split<CR>")
-vim.keymap.set("n", "<leader>z", ":q<CR>")
-vim.keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<CR>")
+keymap("n", "<leader>s", ":vs<CR>", opts)
+keymap("n", "<leader>v", ":split<CR>", opts)
+keymap("n", "<leader>z", ":q<CR>", opts)
+keymap("n", "<leader>e", ":NvimTreeFindFileToggle<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)

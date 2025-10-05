@@ -39,6 +39,7 @@ local options = {
     errorbells = false,
     hidden = true,
     background = "dark",
+    mouse = "",
 }
 
 vim.opt.shortmess:append "c"

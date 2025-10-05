@@ -52,6 +52,7 @@ return {
                 { "pylsp" },
                 { "ols" },
                 { "zls" },
+                { "texlab" }
             }
 
             for _, lsp in pairs(lsps) do

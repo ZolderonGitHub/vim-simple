@@ -2,6 +2,14 @@ return
 {
     {"Tetralux/odin.vim"},
 
+    {
+        "MeanderingProgrammer/render-markdown.nvim",
+        config = function()
+            require('render-markdown').setup({
+                completions = { lsp = { enabled = true } },
+            })
+        end
+    },
     -- Snippets
     {
         "L3MON4D3/LuaSnip",

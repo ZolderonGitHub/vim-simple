@@ -23,7 +23,7 @@ return {
         t("\\]"),
     }),
 
-    s({trig="th", snippetType="autosnippet"},
+    s({trig="th"},
     fmta(
         [[
         \begin{theorem}
@@ -33,7 +33,7 @@ return {
         { i(1) }
     )),
 
-    s({trig="prop", snippetType="autosnippet"},
+    s({trig="prop"},
     fmta(
         [[
         \begin{prop}
@@ -43,7 +43,7 @@ return {
         { i(1) }
     )),
 
-    s({trig="lem", snippetType="autosnippet"},
+    s({trig="lem"},
     fmta(
         [[
         \begin{lemme}
@@ -53,7 +53,7 @@ return {
         { i(1) }
     )),
 
-    s({trig="proof", snippetType="autosnippet"},
+    s({trig="proof"},
     fmta(
         [[
         \begin{proof}

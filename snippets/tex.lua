@@ -53,6 +53,16 @@ return {
         { i(1) }
     )),
 
+    s({trig="cor"},
+    fmta(
+        [[
+        \begin{cor}
+            <>
+        \end{cor}
+        ]],
+        { i(1) }
+    )),
+
     s({trig="proof"},
     fmta(
         [[

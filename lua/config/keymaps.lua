@@ -31,7 +31,7 @@ keymap("n", "<leader>l", "<C-w>l", opts)
 
 keymap("n", "<leader>s", ":vs<CR>", opts)
 keymap("n", "<leader>v", ":split<CR>", opts)
-keymap("n", "<leader>z", ":q<CR>", opts)
+keymap("n", "<leader>q", ":q<CR>", opts)
 keymap("n", "<leader>e", ":NvimTreeFindFileToggle<CR>", opts)
 
 -- Resize with arrows
@@ -87,15 +87,6 @@ function _G.build()
     end
 end
 
-function _G.launch()
-    if vim.fn.has('win32') then
-        vim.cmd "let &makeprg='launch'"
-    else
-        vim.cmd "let &makeprg='bash launch.sh'"
-    end
-    vim.cmd "silent make"
-end
-
 -- toggle diagnostics function
 
 function _G.toggle_diagnostics()
@@ -109,7 +100,12 @@ function _G.toggle_diagnostics()
 end
 
 keymap("n", "<leader>m", ":lua build()<CR>", opts)
-keymap("n", "<leader>b", ":lua launch()<CR>", opts)
-
 keymap("n", "<leader>xd", ":lua toggle_diagnostics()<CR>", opts)
+
+-- Terminal related stuff
+
+vim.keymap.set("n", "<space>t", function()
+    vim.cmd.vnew()
+    vim.cmd.term()
+end, opts)
 

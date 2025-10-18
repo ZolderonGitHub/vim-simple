@@ -109,3 +109,9 @@ vim.keymap.set("n", "<space>t", function()
     vim.cmd.term()
 end, opts)
 
+vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", opts)
+vim.keymap.set("t", "<leader>h", "<C-\\><C-n><C-w>h", opts)
+vim.keymap.set("t", "<leader>j", "<C-\\><C-n><C-w>j", opts)
+vim.keymap.set("t", "<leader>k", "<C-\\><C-n><C-w>k", opts)
+vim.keymap.set("t", "<leader>l", "<C-\\><C-n><C-w>l", opts)
+

@@ -15,13 +15,12 @@ return
         "L3MON4D3/LuaSnip",
         build = "make install_jsregexp",
         config = function()
-            require("luasnip.loaders.from_lua").lazy_load({paths = "~/.config/nvim/snippets/"})
+            require("luasnip.loaders.from_lua").lazy_load({paths = vim.fn.stdpath("config") .. "/snippets/"})
 
             require("luasnip").config.set_config({ -- Setting LuaSnip config
                 -- Enable autotriggered snippets
                 enable_autosnippets = true,
             })
-            print("lol")
         end
     },
     {"rafamadriz/friendly-snippets"},

@@ -14,7 +14,14 @@ return {
 
             telescope.load_extension('media_files')
 
-            telescope.setup({})
+            telescope.setup({
+                defaults = {
+                    file_ignore_patterns = {
+                        "vendor",
+                        "build",
+                    }
+                }
+            })
 
             local builtin = require("telescope.builtin")
             vim.keymap.set("n", "<leader>f", builtin.find_files, {})

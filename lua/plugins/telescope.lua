@@ -17,8 +17,8 @@ return {
             telescope.setup({
                 defaults = {
                     file_ignore_patterns = {
-                        "vendor",
-                        "build",
+                        "vendor/",
+                        "build/",
                     }
                 }
             })

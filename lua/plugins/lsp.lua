@@ -47,25 +47,27 @@ return {
             }
 
             local lsps = {
-                { "clangd" },
+                {
+                    "clangd",
+                    { cmd = { "clangd", "--header-insertion=never" } }, -- FINNALLLYYY
+                },
                 { "lua_ls" },
                 { "pylsp" },
                 { "ols" },
                 { "zls" },
                 { "texlab" }
             }
-
             for _, lsp in pairs(lsps) do
                 local name, config = lsp[1], lsp[2]
-                vim.lsp.enable(name)
+
                 if config then
                     vim.lsp.config(name, config)
                 end
+                vim.lsp.enable(name)
             end
 
             -- By default the diagnostics are disabled, a keymap can be used to reactivate them on the fly
-            -- vim.diagnostic.enable(false)
-
+            vim.diagnostic.enable(false)
         end
     },
     {
